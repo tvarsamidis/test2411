@@ -26,4 +26,19 @@ public class Main {
     public static int getANumber(int x) {
         return 3 * x;
     }
+
+    public static int integerDivide(double a, double b) {
+        if (b == 0) {
+            throw new ArithmeticException("The denominator cannot be 0");
+        }
+        return (int) (a / b);
+    }
+
+    public static Double doubleDivide(double a, double b) {
+        if (b == 0) {
+           return null;
+        }
+        return a / b;
+    }
+
 }
